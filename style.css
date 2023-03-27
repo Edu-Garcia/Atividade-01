@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Merriweather', serif;
+	background-image: url(https://img.freepik.com/fotos-gratis/mao-segurando-o-conceito-de-saude-do-estetoscopio_53876-129536.jpg?w=1380&t=st=1679632060~exp=1679632660~hmac=9bfa368fd4bc3c4b2c04246855a79e5a613f213543df3c249ff48624fdbf19e1);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+
+}
+
+.no-link {
+	text-decoration: none;
+	color: #fff;
+}
+
+.filter {
+	background: rgba(0, 0, 0, 0.5);
+	height: 100vh;
+	color: #fff;
+}
+
+.title-container {
+	width: 70%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 2rem;
+	margin-left: 10%;
+}
+
+.title-container .titles h1 {
+	font-size: 3rem;
+	color: #00FA9A;
+	text-shadow: 1px 1px 2px #000;
+}
+
+.title-container .titles h2 {
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.title-container .subtitle {
+	width: 80%;
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+.title-container .home-button {
+	width: 13rem;
+	padding: 1rem 1rem;
+	background: transparent;
+	color: #fff;
+	text-shadow: 1px 1px 3px #000;
+	font-size: 1.2rem;
+	font-weight: 700;
+	border-radius: 0.5rem;
+	border: 2px solid #3CB371;
+	transition: all 0.3s ease;
+}
+
+.title-container .home-button:hover {
+	background: #3CB371;
+}
+
+.goals-container {
+	width: 100%;
+	min-height: 100vh;
+	background: #e5e5e5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.goals-container .list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	max-width: 150rem;
+	grid-gap: 1.5rem;
+	padding: 2rem 10%;
+	list-style: none;
+}
+
+.goals-container .list .list-item {
+	border: 1px solid black;
+	background-color: #f7f7f7;
+	border-radius: 0.8rem;
+	overflow: hidden;
+	transition: all 0.2s ease;
+}
+
+.goals-container .list .list-item:hover {
+	box-shadow: 0 0 5px #000;
+} 
+
+.goals-container .list .list-item h2 {
+	background-color: #3CB371;
+	padding: 1rem;
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 1px 3px #000;
+}
+.goals-container .list .list-item p {
+	line-height: 1.5;
+	padding: 1rem;
+}
